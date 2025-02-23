@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Empresa de Tecnologia. Design de Projetos. Desenvolvimento de Sistemas. Assessoria Juridica. Streaming de TV. Sistemas Automotivos. Criacao de Sites e Aplicativos.">
+<meta name="author" content="AE MARIBONE - A. EDSON MARIBONE">
+<meta name="generator" content="AE Maribone">
+<meta name="robots" content="/noindex, nofollow">
+<meta name="keywords" content="Patrimonio, Valorizacao, Excelencia, Referencia, Tecnologia, Alto Rendimento, Estrutura, Elegancia, Automacao, Sofisticacao, Maribone, Criacao de Sites e Aplicativos, Projetos, Blueprint">
+<title>MILIDEX WALLET</title>
+
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+  
+</head>
+
+<style>
+
+body {
+background-color: #d2d2d2;
+display: flex;
+flex-direction: column;
+margin: 1px;
+border: 1px solid #000000;
+font-family: 'garamond', 'times new roman'; 'arial', sans-serif;
+font-size: 2vw;
+text-align: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+font-weight: bold;
+width: 98vw;
+height: 100vw;
+word-spacing: 0.2em;
+}
+
+header {
+background-color: #008ac3;
+display: flex;
+height: 10%;
+width: 100%;
+border: 1px solid #ffffff;
+
+}
+
+main {
+background-color: #ffffff;
+display: flex;
+height: 5%;
+width: 100%;
+border: 1px solid #ffffff;
+
+}
+
+
+section {
+background-image: url('https://lh7-us.googleusercontent.com/vut0zZKwNeq100B4Ktzt4-_My3b40Pn7zWcpNdgTS2FAnPlWiDqOzHrq9BBx6jHUhoKkIZsSgrx90kbnJ0YzcJZ-FkXcjN0jftGVTpk4cfQ2A6WWFvziSQMyK42immVsc0NA-_Uq8cvEz5RcK9xrey4Ortp5pA');
+background-position: center;
+background-size: 120%;
+background-repeat: no-repeat;
+
+
+}
+
+
+input[type="text"] {
+display: flex;
+width: 49%;
+height: 20%;
+margin-left: 25%;
+margin-top: 25px;
+border: 1px solid #ccc;
+border-radius: 4px;
+
+}
+
+
+input[type="password"] {
+display: flex;
+width: 49%;
+max-width: 49%;
+height: 20%;
+margin-left: 25%;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+
+}
+
+
+button:hover {
+backgrund-color: #218838;
+}
+
+#resultado {
+text-align: center;
+margin-top; 10px;
+}
+
+#BOTAO {
+position: fixed;
+right: 2em;
+margin-top: 0.3%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 3em;
+height: 2em;
+background-color: #ffffff;
+border: 1px solid #ffffff;
+cursor: pointer;
+}
+
+.bar {
+width: 3em;
+height: 0.6em;
+background-color: #008ac3;
+margin: 1px;
+
+}
+
+.sidebar {
+  width: 50%; /* Ajuste conforme necessário */
+  height: 100%; /* Altura total da visualização */
+  position: fixed; /* Fixa a sidebar na tela */
+  top: 0;
+  right: -150%; /* Esconde a sidebar fora da tela à direita */
+  border: 1px solid #008ac3;
+  background-color: #a7a7a7; /* Cor de fundo da sidebar */
+  color: #008ac3;
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  transition: right 0.5s; /* Animação para mostrar/esconder a sidebar */
+  z-index: 101;
+}
+
+.close-button {
+  font-size: 24px; /* Tamanho do ícone de fechar */
+  color: #fff; /* Cor do ícone */
+  cursor: pointer; /* Indica que é clicável */
+  position: absolute;
+  top: 10px; /* Ajuste conforme necessário */
+  right: 10px; /* Ajuste conforme necessário */
+  z-index: 102;
+}
+
+.sidebar-menu {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+.sidebar-menu a {
+  color: #ffffff;exto dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.sidebar-menu a:hover {
+  text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+
+
+</style>
+
+ 
+<body>
+
+<header> <img src="https://lh7-us.googleusercontent.com/vut0zZKwNeq100B4Ktzt4-_My3b40Pn7zWcpNdgTS2FAnPlWiDqOzHrq9BBx6jHUhoKkIZsSgrx90kbnJ0YzcJZ-FkXcjN0jftGVTpk4cfQ2A6WWFvziSQMyK42immVsc0NA-_Uq8cvEz5RcK9xrey4Ortp5pA" style="width: auto; display: flex; height: 5vw; margin-right: 8px;">
+  <h2 style="color: #ffffff; font-size: 2em;">Milidex Wallet</h2>
+  <p  id="datetime" style="color: #ffffff; display: flex; flex-wrap: wrap; margin-left: 35%; font-size: 1em; margin-top: 1%;"> 13/07/2024 16:00:14</p>
+
+
+<div>
+<div id="BOTAO">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+
+<div class="sidebar" id="ABA">
+  <ul class="sidebar-menu" style="font-size: 5vw;">
+    <li><a href="aplicativos">Ínicio</a></li>
+    <li><a href="servicos">Serviços</a></li>
+    <li><a href="contato">Contato</a></li>
+    <li><a href="sobre">Suporte</a></li>
+  </ul>
+</div>
+
+<div class="close-button" id="closeButton">
+    &times; <!-- Ícone de fechar -->
+  </div>
+
+
+</header>
+
+
+<div style="display: flex; flex-direction: column; justify-content: center;
+margin-top: 25px; margin-left: 5%; margin-bottom: 15%; background-color: #ffffff; display: flex; height: 25%;
+width: 50%; border: 1px solid #008ac3; box-shadow: 0 0 5px rgba(0, 138, 195, 0.9);">
+
+<p style="font-size: 2em; text-align: left; margin-bottom: 1%;"> Seu Saldo:</p>
+<p style="font-size: 3em; text-align: left; margin-top: 1%;"> R$ 230,41</p>
+
+</div>
+
+<main> <img src="https://lh7-us.googleusercontent.com/N4q9pNsD190-GRavgfmeOdEEmr6k6-1n55x-pcJQWvLQEP3XJqZgjuzViZMenwc2HaYIJUrdiycTOMqnvVRjaI11_U99Y7Al_25Vb0ayRAVFBtAPUJbJei7N3pDGbQIPKYEQKasBKUCI6r7tH8rPDRq2wXaz7g" style="width: auto; display: flex; height: 5vw; margin-right: 8px;">
+
+
+<button id="payButton">Pagar com Mercado Pago</button>
+</main>
+  
+<script>
+
+function UpdateDateTime() {
+        var now = new Date();
+        var formattedDate = now.toLocaleDateString('pt-BR');
+        var formattedTime = now.toLocaleTimeString('pt-BR', {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: false
+        });
+
+        document.getElementById("datetime").innerHTML = formattedDate + '<br>' + formattedTime;
+      }
+
+      setInterval(UpdateDateTime, 1000);
+      UpdateDateTime();
+  
+
+
+// Chamar a função updatedatetime inicialmente
+updatedatetime();
+
+// Atualizar a data e hora a cada segundo
+setInterval(updatedatetime, 1000);
+
+
+document.getElementById('BOTAO').onclick = function() {
+  var sidebar = document.getElementById('ABA');
+  if (sidebar.style.left === '0px') {
+    sidebar.style.right = '0'; // Esconde a sidebar
+  } else {
+    sidebar.style.right = '0px'; // Mostra a sidebar
+  }
+}
+
+
+document.getElementById('closeButton').onclick = function() {
+  var sidebar = document.getElementById('ABA');
+  sidebar.style.right = '-150%'; // Esconde a sidebar
+}
+
+    document.getElementById("payButton").addEventListener("click", function() {
+        window.location.href = "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=2251240952-a8812273-8307-4f88-a1f2-7567ee3d45e0";
+    });
+
+</script>
+
+</body>
+</html>
