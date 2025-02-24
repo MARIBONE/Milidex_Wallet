@@ -5,7 +5,7 @@
 async function obterCotacaoExchange() {
     // Aqui você faria a chamada real para a API da Exchange.
     // Exemplo: 
-    // const response = await fetch('https://api.exemplo.com/cotacao');
+    // const response = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=XMRBRL');
     // const data = await response.json();
     // return data.cotacao;
     
